@@ -20,6 +20,7 @@ public class AppConfig {
     }
 
     @Bean
+//    @Lazy
     public OrderService orderService() {
         return new OrderService(paymentMode.equals("stripe") ? stripe() : paypal());
     }

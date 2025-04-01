@@ -40,6 +40,10 @@ It is a guideline, not a rule. Implement when it makes sense.
 * ``@Qualifier`` is used when we want to use a specific implementation.
 * ``@Value()`` is used to extract data from application.properties (env)
   * ``@Value("${stripe.apiPort:8090}")`` the value after the `:` is default value in case the extracted key is not present
+* There are two types of Bean Initialization.
+  * Early/Eager: Spring will initialize every bean mentioned in the code at the time of project initialization even if they are not used
+  * Lazy: It is an optimization technique that creates objects when needed (Only use when a bean is very memory intensive)
+
 
 ```sh
 git clone https://github.com/mosh-hamedani/spring-store

@@ -14,6 +14,8 @@ public class StoreApplication {
 
         var notificationService = context.getBean(NotificationManager.class);
         notificationService.sendNotification("Hi Sara!");
+
+//        var heavyResource = context.getBean(HeavyResource.class);
 //        var orderService1 = new OrderService(new StripePaymentService());
 //        var orderService2 = new OrderService(new PaypalPaymentService());
 //        orderService1.placeOrder();
